@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+.container{
+    max-width: 1036px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgb(241, 94, 57);
+    padding: 20px;
+}
+
+header .container,
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: rgb(16, 17, 18);
+    font-weight: bold;
+    font-size: 45px;
+}
+
+header nav a{
+    color: rgb(16, 17, 18);
+    font-size: 20px;
+}
+
+header img{
+    max-width: 100px;
+}
+
+header nav li{
+    list-style: none;
+    display: inline;
+}
+
+header nav li a{
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(236, 237, 238);
+}
+
+#about{
+    margin-top: 32px;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+#about img{
+    max-width: 300px;
+    margin-right: 25px;
+}
+
+#about h2,
+#produto h2{
+    padding-bottom: 15px;
+    border-bottom: 4px solid rgb(241, 94, 57);
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#about p{
+    padding-top: 8px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%; 
+}
+
+.produtos img{
+    width: 100%;
+    padding-top: 32px;
+    padding-bottom: 16px;
+}
+
+#produto h2{
+    width: 100%;
+    padding: 8px 0;
+}
+
+.produto h3{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.produto h4{
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 8px;
+    font-style: italic;
+}
+
+.produtos button{
+    cursor: pointer;
+    background-color: rgb(241, 94, 57);
+    width: 100%;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 0;
+    color: rgb(236, 237, 238);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+footer{
+    background-color:rgb(241, 94, 57);
+    text-align: center;
+    color: rgb(16, 17, 18);
+    padding: 16px;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 640px){
+    .container{
+        display: block;
+        max-width: 90%;
+        position: relative;
+    }
+
+    header .container{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    header{
+        padding: 10px;
+    }
+
+    header h1{
+        margin-bottom: 15px;
+    }
+
+    .container nav li {
+        max-width: 100%;
+        margin-left:0;
+    }
+
+    .container nav li a{
+        margin-left: 0;
+        padding: 0 16px;
+    }
+
+
+    header img{
+        width: 80px;
+        margin: 0 auto;
+    }
+
+    .container #about{
+        justify-content: center;
+    }
+
+    #about{
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+
+    #about img{
+        width:100%;
+        margin: 30px auto;
+        display: block;
+
+    }
+
+    #about h2,
+    #produto h2{
+        padding-bottom: 0 10px;
+        font-size: 25px;
+    }
+
+    .produtos img{
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+    }
+
+    .produtos button{
+        width: 100%;
+        padding: 5px 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    footer{
+        padding: 6px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    header .container{
+        max-width: 95.9%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    header .container h1{
+        font-size: 3em;
+    }
+
+    header nav li {
+        font-size: 1.6em;
+        display: inline;
+        margin: 0;
+        padding-right: 0;
+    }
+
+    #about h2,
+    #produto h2{
+        font-size: 2.3em;
+    }
+
+    .produto h3{
+        font-size: 1.7em;
+    }
+
+    .produto h4,
+    .produto button{
+        font-size: 1.5em;
+    }
+
+    #about p{
+        font-size: 1.8em;
+    }
+
+    #about .container{
+        display: block;
+    }
+
+    #about img{
+        display: block;
+        width: 250px;
+        margin: 30px auto;    
+    }
+
+    .produtos{
+        display: grid;
+        grid-template-columns: repeat(2, 47%);
+        column-gap: 6%; 
+    }
+
+    
+    .produtos img{
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+}
